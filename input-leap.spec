@@ -1,5 +1,5 @@
 Name:		input-leap
-Version:    3.0.2^545548a0b5
+Version:    3.0.2^20250128545548a0b
 Release:	1
 #Source0:	https://github.com/input-leap/input-leap/archive/refs/tags/v%%{version}.tar.gz
 # Hash version used to address an issue that was causing segfaults with version 3.0.2 
