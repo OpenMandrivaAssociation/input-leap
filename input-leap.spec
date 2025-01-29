@@ -1,9 +1,9 @@
 Name:		input-leap
-Version:    3.0.2^20250128545548a0b
+Version:    3.0.2~0.20250125.1
 Release:	1
 #Source0:	https://github.com/input-leap/input-leap/archive/refs/tags/v%%{version}.tar.gz
 # Hash version used to address an issue that was causing segfaults with version 3.0.2 
-Source0:    https://github.com/input-leap/input-leap/archive/545548a0b59ca866a425c0d1513b99eb8a6b02df.zip
+Source0:    https://github.com/input-leap/input-leap/archive/545548a0b59ca866a425c0d1513b99eb8a6b02df.tar.gz
 Summary:	An open source software based KVM (no video)
 URL:		https://github.com/input-leap/input-leap
 License:	GPLv2
@@ -57,7 +57,7 @@ done
 install -D -p -m 0644 %{builddir}/%{name}-%{version}/res/io.github.input_leap.input-leap.desktop %{buildroot}%{_datadir}/applications/io.github.input_leap.input-leap.desktop
 
 
-# icons that need converted
+# Get list of other icons that need converted
 files=$(ls %{builddir}/%{name}-%{version}/res/icons/*.svg)
 
 for x in $files
@@ -71,6 +71,8 @@ fname=$(basename ${x} .svg)
 			-o %{buildroot}%{_iconsdir}/hicolor/${d}x${d}/apps/${fname}.png
     done
 done
+    
+install -D -p -m 0644 %{builddir}/%{name}-%{version}/LICENSE %{buildroot}%{_defaultlicensedir}/%{name}/LICENSE
 
 %files
 %{_bindir}/input-*
@@ -79,3 +81,4 @@ done
 %{_datadir}/man/man1/input-leap*.1.zst
 %{_datadir}/metainfo/*
 %{_datadir}/icons/hicolor/*/apps/*.png
+%{_defaultlicensedir}/%{name}/LICENSE
