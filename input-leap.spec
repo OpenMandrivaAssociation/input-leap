@@ -1,5 +1,5 @@
 Name:		input-leap
-Version:    3.0.2
+Version:    3.0.3
 Release:	1~0.20250125.1
 # The version below is for use with a realeased version
 #Source0:	https://github.com/input-leap/input-leap/archive/refs/tags/v%%{version}.tar.gz
