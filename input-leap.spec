@@ -27,6 +27,7 @@ BuildRequires:  pkgconfig(xi)
 BuildRequires:  pkgconfig(xinerama)
 BuildRequires:  pkgconfig(xrandr)
 BuildRequires:  pkgconfig(xtst)
+BuildRequires:  librsvg
 
 BuildSystem:	cmake
 BuildOption:    -DINPUTLEAP_BUILD_X11=ON
