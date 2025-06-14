@@ -1,10 +1,10 @@
 Name:		input-leap
 Version:    3.0.3
-Release:	1~0.20250125
+Release:	1
 # The version below is for use with a realeased version
 #Source0:	https://github.com/input-leap/input-leap/archive/refs/tags/v%%{version}.tar.gz
 # Hash version used to address an issue that was causing segfaults with version 3.0.2 
-Source0:    https://github.com/input-leap/input-leap/archive/545548a0b59ca866a425c0d1513b99eb8a6b02df.tar.gz
+Source0:    https://github.com/input-leap/input-leap/archive/v%{version}/%{name}-%{version}.tar.gz
 Summary:	An open source software based KVM (no video)
 URL:		https://github.com/input-leap/input-leap
 License:	GPLv2
