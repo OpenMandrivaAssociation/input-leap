@@ -1,6 +1,6 @@
 Name:		input-leap
 Version:    3.0.3
-Release:	1
+Release:	2
 Source0:    https://github.com/input-leap/input-leap/archive/v%{version}/%{name}-%{version}.tar.gz
 Summary:	An open source software based KVM (no video)
 URL:		https://github.com/input-leap/input-leap
